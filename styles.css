@@ -15,7 +15,7 @@
     'idiomas barra fin fin';
 
     grid-template-columns: 3fr 0.5fr 2fr 3fr;
-    grid-template-rows: 1fr 2fr 1fr 1fr;
+    grid-template-rows: 1fr 0.9fr 1fr 1fr;
 }
 
 .barra {
@@ -31,6 +31,7 @@
     grid-area: nombre;
     display: grid;
     align-content: center;   
+    padding-bottom: 60px;
 
 }
 
@@ -74,9 +75,26 @@ aside{
     grid-area: idiomas;
 }
 
+.sobremi{
+    grid-area: sobremi;
+    display: grid;
+    
+}
+
+.sobremi h1{
+    font-size: 20px;
+    padding-left: 5px;
+    
+}
+
+.sobremi h2{
+   margin-top: 10px; 
+   padding-left: 13px;
+   padding-bottom: 80px;
+    font-size: x-small; 
+}
 
 @media only screen and (min-width: 1280px) {
- 
 }
 
 /*Chatgpt*/
