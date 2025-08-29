@@ -1,0 +1,45 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    height: 100%;
+    
+}
+
+.Contenedorgrid{
+    display: grid;
+    grid-template-areas:
+    'img barra nombre nombre'
+    'sobremi barra cont cont'
+    'contacto barra cont cont'
+    'idiomas barra cont cont';
+}
+
+.barra {
+    background-color: black;
+    display: grid;
+    grid-area: barra;
+    width: 6px;
+}
+
+
+.Contenedorgrid header h1 {
+    
+    grid-area: nombre ;
+}
+
+.imgcv img{
+    display: grid;
+    grid-area: img;
+    justify-self: center;
+    border-radius: 999%;
+    border: 4px solid;
+    border-color: black;
+    height: 100px;
+    width: 100px;
+}
+
+
+@media only screen and (min-width: 1280px) {
+ 
+}
