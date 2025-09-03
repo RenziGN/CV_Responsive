@@ -1,0 +1,234 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.Contenedorgrid{
+    display: grid;
+    grid-template-areas:
+    'img barra nombre nombre'
+    'sobremi barra cont cont'
+    'contacto barra cont cont'
+    'idiomas barra fin fin';
+
+    grid-template-columns: 3fr 0.5fr 2fr 3fr;
+    grid-template-rows: 1fr 0.9fr 1fr 1fr;
+}
+
+.barra {
+    background-color: black;
+    display: grid;
+    grid-area: barra;
+    width: 6px;
+}
+
+
+
+.nombre {
+    grid-area: nombre;
+    display: grid;
+    align-content: center;   
+    padding-bottom: 10px;
+
+}
+
+
+main *
+{ 
+    height: auto;
+
+}
+
+main h5
+{
+    padding-left: 5px;
+}
+
+li {
+  list-style-type: disc;
+  min-height: 1em; /* asegura espacio para el punto */
+}
+
+.lifecole {
+    padding-top: 30px;
+}
+
+
+
+ul {
+  list-style-position: inside; /* Mueve los puntos dentro de la caja */
+  margin-left: 0;              /* Saca margen por defecto */
+  padding-left: 20px;          /* Controla el espacio a la izquierda */
+}
+.nombre h1{
+    padding-right: 50px;
+}
+.nombre h2 {
+    margin-top: 0; 
+    padding-left: 10px;
+    font-size: small;
+}
+
+.nombre .barras
+{
+    background-color: black;
+    width: 86%;
+    height: 2px;
+    margin-top: 10px;
+}
+
+.imgcv {
+    height: 150px;
+    grid-area: img;
+    display: grid;
+    place-items: center; /
+}
+
+.imgcv img{
+    border-radius: 999%;
+    border: 4px solid black;
+    height: 100px;
+    width: 100px;
+    
+}
+
+main{
+    grid-area: cont;
+}
+
+aside{
+    grid-area: idiomas;
+}
+
+.sobremi{
+    grid-area: sobremi;
+    display: grid;
+    
+}
+
+.sobremi h1{
+    font-size: 20px;
+    padding-left: 5px;
+    
+}
+
+.sobremi h2{
+   margin-top: 10px; 
+   padding-left: 13px;
+   padding-bottom: 80px;
+    font-size: x-small; 
+}
+
+
+/* === SECCIÓN CONTACTO === */
+.contacto {
+  grid-area: contacto;
+  background: white;
+  padding: 20px;
+}
+
+.contacto h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.contacto ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contacto li {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.contacto .icon {
+  width: 20px;
+  margin-right: 10px;
+  font-size: 16px;
+}
+.contacto *{
+    height: auto;
+}
+
+.fin *{
+    height: auto;
+}
+
+aside *{
+    height: auto;
+}
+
+/* === SECCIÓN IDIOMAS === */
+aside {
+  grid-area: idiomas;
+  background: white;
+  padding: 20px;
+}
+
+aside h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+aside ul {
+  padding-left: 20px;
+  margin: 0;
+}
+
+aside li {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+@media only screen and (min-width: 1280px) {
+    
+}
+
+/*Chatgpt*/
+.imgcv {
+    grid-area: img;
+    display: grid;
+    place-items: center;
+    background: lightblue;
+}
+
+.nombre {
+    grid-area: nombre;
+    display: grid;
+    place-items: center;
+}
+
+
+main {
+    grid-area: cont;
+    background: red;
+}
+
+aside {
+    grid-area: idiomas;
+    background: pink;
+}
+
+.sobremi {
+    grid-area: sobremi;
+    background: orange;
+}
+
+.contacto {
+    grid-area: contacto;
+    background: violet;
+}
+
+.fin {
+    grid-area: fin;
+    background: blue;
+}
+/*Chatgpt*/
