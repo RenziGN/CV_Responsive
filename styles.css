@@ -1,4 +1,4 @@
-*{
+    *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -162,10 +162,10 @@ aside{
 }
 
 aside *{
-    height: auto;
+    height: 20%;
 }
 
-/* === SECCIÓN IDIOMAS === */
+
 aside {
   grid-area: idiomas;
   background: white;
@@ -188,8 +188,132 @@ aside li {
   margin-bottom: 5px;
 }
 
+
+.fin section {
+  margin-bottom: 10px;   
+}
+
+.fin h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+}
+
+.fin h3 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.fin p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.fin ul {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.fin li {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
 @media only screen and (min-width: 1280px) {
+    @media only screen and (min-width: 1280px) {
     
+    /* Ajuste general del grid */
+    .Contenedorgrid {
+        grid-template-columns: 3fr 0.5fr 2.5fr 3.5fr; /* un poco más ancho el contenido */
+        grid-template-rows: 1.2fr 1fr 1.2fr 1.8fr;     /* más espacio para filas importantes */
+        gap: 10px;
+    }
+
+    /* Imagen del CV más grande */
+    .imgcv img {
+        height: 120px;
+        width: 120px;
+    }
+
+
+    .nombre h1 {
+        font-size: 28px;
+    }
+
+    .nombre h2 {
+        font-size: 16px;
+        padding-left: 10px;
+    }
+
+    .sobremi h1 {
+        font-size: 22px;
+    }
+    
+    .sobremi h2 {
+        font-size: 14px;
+        padding-left: 15px;
+        padding-bottom: 50px;
+    }
+
+    main h2 {
+        font-size: 20px;
+    }
+
+    main h5 {
+        font-size: 15px;
+    }
+
+    main ul li {
+        font-size: 14px;
+    }
+
+    /* Contacto */
+    .contacto {
+        padding: 25px;
+    }
+
+    .contacto h2 {
+        font-size: 20px;
+    }
+
+    .contacto li {
+        font-size: 15px;
+    }
+
+    /* Idiomas */
+    aside {
+        padding: 25px;
+        min-height: 100%;
+    }
+
+    aside h2 {
+        font-size: 20px;
+    }
+
+    aside li {
+        font-size: 15px;
+    }
+
+    /* Sección final */
+    .fin {
+        padding: 25px;
+    }
+
+    .fin h2 {
+        font-size: 22px;
+    }
+
+    .fin h3 {
+        font-size: 18px;
+    }
+
+    .fin li {
+        font-size: 15px;
+    }
+}
+
 }
 
 /*Chatgpt*/
