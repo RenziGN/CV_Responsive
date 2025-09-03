@@ -3,7 +3,6 @@
     padding: 0px;
     box-sizing: border-box;
     height: 100%;
-    
 }
 
 .Contenedorgrid{
@@ -31,10 +30,38 @@
     grid-area: nombre;
     display: grid;
     align-content: center;   
-    padding-bottom: 60px;
+    padding-bottom: 10px;
 
 }
 
+
+main *
+{ 
+    height: auto;
+
+}
+
+main h5
+{
+    padding-left: 5px;
+}
+
+li {
+  list-style-type: disc;
+  min-height: 1em; /* asegura espacio para el punto */
+}
+
+.lifecole {
+    padding-top: 30px;
+}
+
+
+
+ul {
+  list-style-position: inside; /* Mueve los puntos dentro de la caja */
+  margin-left: 0;              /* Saca margen por defecto */
+  padding-left: 20px;          /* Controla el espacio a la izquierda */
+}
 .nombre h1{
     padding-right: 50px;
 }
@@ -94,7 +121,75 @@ aside{
     font-size: x-small; 
 }
 
+
+/* === SECCIÓN CONTACTO === */
+.contacto {
+  grid-area: contacto;
+  background: white;
+  padding: 20px;
+}
+
+.contacto h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.contacto ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contacto li {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.contacto .icon {
+  width: 20px;
+  margin-right: 10px;
+  font-size: 16px;
+}
+.contacto *{
+    height: auto;
+}
+
+.fin *{
+    height: auto;
+}
+
+aside *{
+    height: auto;
+}
+
+/* === SECCIÓN IDIOMAS === */
+aside {
+  grid-area: idiomas;
+  background: white;
+  padding: 20px;
+}
+
+aside h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+aside ul {
+  padding-left: 20px;
+  margin: 0;
+}
+
+aside li {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
 @media only screen and (min-width: 1280px) {
+    
 }
 
 /*Chatgpt*/
